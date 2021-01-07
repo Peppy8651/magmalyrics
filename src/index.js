@@ -12,7 +12,7 @@ module.exports = class {
         const cacheKey = source + '||' + search;
         if (cache.hasOwnProperty(cacheKey)) return cache[cacheKey];
         const conf = this.options[source];
-        // try {
+        try {
             let connection = await fetch(conf.search.url+search,{headers:{'User-Agent':this.options.useragent},timeout:this.options.timeout});
             let doc = await connection.text();
             let $ = cheerio.load(doc);
@@ -30,6 +30,6 @@ module.exports = class {
             }
             cache.cacheKey = lyrics;
             return lyrics;
-        // } catch (e) { return null };
+        } catch (e) { return null };
     };
 };

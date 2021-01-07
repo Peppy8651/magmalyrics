@@ -1,6 +1,6 @@
 {
   "name": "magmalyrics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lyrics library for NodeJS that's easy to use and extend",
   "main": "src/index.js",
   "scripts": {
