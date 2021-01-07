@@ -17,6 +17,7 @@ module.exports = class {
             let $ = cheerio.load(doc);
             const urlElement = $(conf.search.select).first();
             const url = urlElement.prop('href');
+            console.log(url);
             connection = await nodeFetch(url,{headers:{'User-Agent':this.options.useragent},timeout:this.options.timeout});
             doc = await connection.text();
             $ = cheerio.load(doc);
