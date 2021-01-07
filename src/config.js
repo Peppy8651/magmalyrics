@@ -1,7 +1,7 @@
 module.exports = {
     default: 'azlyrics',
     timeout: 5000,
-    useragent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+    useragent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43',
     azlyrics: {
         search: {
             url: 'https://search.azlyrics.com/search.php?q=',
